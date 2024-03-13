@@ -1,49 +1,77 @@
 import java.util.*;
 
-// Toppings enum
+/**
+ * Enum representing various toppings for a pizza.
+ */
 enum Topping {
     PEPPERONI, SAUSAGE, MUSHROOMS, BACON, ONIONS, EXTRA_CHEESE, PEPPERS, CHICKEN, OLIVES,
     SPINACH, TOMATO_AND_BASIL, BEEF, HAM, PESTO, SPICY_PORK, HAM_AND_PINEAPPLE
 }
 
-// Pizza class
+/**
+ * Class representing a pizza.
+ */
 class Pizza {
     private final String chain;
     private final String size;
     private final List<Topping> toppings;
 
+    /**
+     * Constructor for Pizza class.
+     * 
+     * @param builder The builder object used to construct the pizza.
+     */
     protected Pizza(Builder builder) {
         this.chain = builder.chain;
         this.size = builder.size;
         this.toppings = builder.toppings;
     }
 
+    /**
+     * Method to eat the pizza.
+     */
     public void eat() {
         System.out.println("Eating " + chain + " " + size + " pizza with toppings: " + toppings);
         System.out.println();
     }
 
+    /**
+     * Builder class for constructing Pizza objects.
+     */
     public static class Builder {
         private final String chain;
         private final String size;
         private final List<Topping> toppings = new ArrayList<>();
 
-        // pizza sizes are REQUIRED and must be set! This is why they are parameters for
-        // the Builder
+        /**
+         * Constructor for Builder class.
+         * 
+         * @param chain The chain of the pizza restaurant.
+         * @param size  The size of the pizza.
+         */
         public Builder(String chain, String size) {
             this.chain = chain;
             this.size = size;
         }
 
+        /**
+         * Method to add a topping to the pizza.
+         * 
+         * @param topping The topping to add.
+         * @return The Builder object for method chaining.
+         */
         public Builder addTopping(Topping topping) {
             toppings.add(topping);
             return this;
         }
 
-        // since Pizza sizes and chains are required, and are needed to print out the
-        // info in the eat() function
-        // we check if they are null or an empty string and throw exceptions notifying
-        // the user that they are required
+        /**
+         * Method to build the Pizza object.
+         * 
+         * @return The constructed Pizza object.
+         * @throws IllegalStateException If the chain or size is null or an empty
+         *                               string.
+         */
         public Pizza build() {
             if (chain == null || chain == "") {
                 throw new IllegalStateException("Pizza chain is required!");
@@ -56,19 +84,27 @@ class Pizza {
     }
 }
 
+/**
+ * Class representing a Little Caesars pizza.
+ */
 class LittleCaesars extends Pizza {
     public LittleCaesars(Builder builder) {
         super(builder);
     }
 }
 
+/**
+ * Class representing a Dominos pizza.
+ */
 class Dominos extends Pizza {
     public Dominos(Builder builder) {
         super(builder);
     }
 }
 
-// Driver program
+/**
+ * Driver program to create and eat pizzas.
+ */
 public class Main {
     public static void main(String[] args) {
 

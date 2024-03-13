@@ -1,4 +1,6 @@
-
+/**
+ * Enum representing different diet plans.
+ */
 public enum DietPlan {
     NONE,
     PALEO,
