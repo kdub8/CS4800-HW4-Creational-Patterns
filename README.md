@@ -1,30 +1,30 @@
 # Creational Design Patterns: Pizza and Macronutrients!
 ## Builder Pattern: Pizza Creation
-Description
+### Description
 You will create a pizza chain, Pizza Hut, where pizzas can be created with various toppings. To simplify the creation process, the builder design pattern will be used to allow users to clearly understand the selected toppings.
 
--Toppings
--Pepperoni
--Sausage
--Mushrooms
--Bacon
--Onions
--Extra Cheese
--Peppers
--Chicken
--Olives
--Spinach
--Tomato and Basil
--Beef
--Ham
--Pesto
--Spicy Pork
--Ham and Pineapple
+- Toppings
+- Pepperoni
+- Sausage
+- Mushrooms
+- Bacon
+- Onions
+- Extra Cheese
+- Peppers
+- Chicken
+- Olives
+- Spinach
+- Tomato and Basil
+- Beef
+- Ham
+- Pesto
+- Spicy Pork
+- Ham and Pineapple
 
 Pizza Sizes:
--Small
--Medium
--Large
+- Small
+- Medium
+- Large
 
 Requirements:
 The size of the pizza is required and must be set.
@@ -34,18 +34,20 @@ Create three pizzas (small, medium, large) with 3, 6, and 9 toppings respectivel
 Add two more pizza chains, Little Caesars and Dominos, following the same rules as Pizza Hut, and create specific pizzas for each chain.
 
 ## Abstract Factory, Factory, and Singleton Patterns: Macronutrient Meals
-Description
+### Description
 Create a macronutrient-balanced meal for customers based on their given diet plans. The system should generate a meal with one of the following at random: Carbs, Protein, and Fats, as long as it does not violate the customer's diet plan.
 
 Macronutrient Food Options
-Carbs: Cheese, Bread, Lentils, Pistachio
-Protein: Fish, Chicken, Beef, Tofu
-Fats: Avocado, Sour cream, Tuna, Peanuts
-Diet Plans
-No Restriction
-Paleo
-Vegan
-Nut Allergy
+- Carbs: Cheese, Bread, Lentils, Pistachio
+- Protein: Fish, Chicken, Beef, Tofu
+- Fats: Avocado, Sour cream, Tuna, Peanuts
+
+Diet Plans:
+- No Restriction
+- Paleo
+- Vegan
+- Nut Allergy
+
 Requirements:
 The customer provides their name and diet plan.
 Each meal should have one item from each category (Carbs, Protein, Fats).
