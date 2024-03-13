@@ -3,28 +3,30 @@
 Description
 You will create a pizza chain, Pizza Hut, where pizzas can be created with various toppings. To simplify the creation process, the builder design pattern will be used to allow users to clearly understand the selected toppings.
 
-- Toppings
-Pepperoni
-Sausage
-Mushrooms
-Bacon
-Onions
-Extra Cheese
-Peppers
-Chicken
-Olives
-Spinach
-Tomato and Basil
-Beef
-Ham
-Pesto
-Spicy Pork
-Ham and Pineapple
-Pizza Sizes
-Small
-Medium
-Large
-Requirements
+-Toppings
+-Pepperoni
+-Sausage
+-Mushrooms
+-Bacon
+-Onions
+-Extra Cheese
+-Peppers
+-Chicken
+-Olives
+-Spinach
+-Tomato and Basil
+-Beef
+-Ham
+-Pesto
+-Spicy Pork
+-Ham and Pineapple
+
+Pizza Sizes:
+-Small
+-Medium
+-Large
+
+Requirements:
 The size of the pizza is required and must be set.
 The eat() method should print out the pizza chain, size, and all toppings specific to that pizza.
 Tasks
@@ -44,7 +46,7 @@ No Restriction
 Paleo
 Vegan
 Nut Allergy
-Requirements
+Requirements:
 The customer provides their name and diet plan.
 Each meal should have one item from each category (Carbs, Protein, Fats).
 Use Abstract Factory to create the three factories (Carbs, Protein, Fats) to produce a meal for the customer at random based on their food restrictions.
