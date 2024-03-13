@@ -3,7 +3,7 @@
 Description
 You will create a pizza chain, Pizza Hut, where pizzas can be created with various toppings. To simplify the creation process, the builder design pattern will be used to allow users to clearly understand the selected toppings.
 
-Toppings
+- Toppings
 Pepperoni
 Sausage
 Mushrooms
